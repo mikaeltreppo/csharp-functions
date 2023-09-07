@@ -34,9 +34,18 @@ int[] ElevaArrayAlQuadrato(int[] array)
     {
         arrayCopy[i] = Quadrato(arrayCopy[i]);
     }
+    for (int x = 0; x < arrayCopy.Length; x++)
+    {
+
+        Console.WriteLine(arrayCopy[x]);
+    }
+    for (int j = 0; j < arrayCopy.Length; j++)
+    {
+
+        Console.WriteLine(array[j]);
+    }
 
     return arrayCopy;
-    
 };
 int sommaElementiArray(int[] array)
 {
@@ -44,8 +53,15 @@ int sommaElementiArray(int[] array)
     for(int i = 0;i<array.Length ; i++) {
     
     sum += array[i];
-    }
+    }    Console.WriteLine(sum);
     return sum;
+
 }
 
 //fine function d'appoggio
+
+int[] exerciseArray = { 2, 6, 7, 5, 3, 9 };
+
+StampaArray(exerciseArray);
+ElevaArrayAlQuadrato(exerciseArray);
+sommaElementiArray(exerciseArray);
